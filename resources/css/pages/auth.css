@@ -1,0 +1,468 @@
+/* ==========================
+   AUTH CONTROLWATT
+========================== */
+
+
+body.auth-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background-image:
+
+    linear-gradient(
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.05)
+    ),
+
+    url('/images/smart-home.jpg');
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+/* ==========================
+   TARJETA GLASS 3D
+========================== */
+
+
+.auth-card{
+
+    width:100%;
+
+    max-width:430px;
+
+    padding:45px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+    rgba(255,255,255,.18);
+
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.35);
+
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.25),
+
+    inset 0 1px 0 rgba(255,255,255,.5);
+
+
+    transition:.4s;
+
+}
+
+
+
+.auth-card:hover{
+
+    transform:
+
+    translateY(-8px);
+
+
+    box-shadow:
+
+    0 40px 90px rgba(0,0,0,.35);
+
+}
+
+
+
+/* ==========================
+   LOGO
+========================== */
+
+
+.auth-logo{
+
+    text-align:center;
+
+    font-size:38px;
+
+    font-weight:800;
+
+    color:#111827;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* ==========================
+   SUBTITULO
+========================== */
+
+
+.auth-subtitle{
+
+    text-align:center;
+
+    color:#475569;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* ==========================
+   LABELS
+========================== */
+
+
+.auth-card label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#1e293b;
+
+    font-weight:600;
+
+}
+
+
+
+/* ==========================
+   INPUTS
+========================== */
+
+
+.auth-card input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+
+    border-radius:15px;
+
+
+    background:
+
+    rgba(255,255,255,.35);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.5);
+
+
+    color:#111827;
+
+
+    transition:.3s;
+
+}
+
+
+
+.auth-card input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+
+    box-shadow:
+
+    0 0 15px rgba(37,99,235,.25);
+
+}
+
+
+
+/* ==========================
+   BOTÓN
+========================== */
+
+
+.auth-btn{
+
+    width:100%;
+
+    padding:15px;
+
+
+    border-radius:15px;
+
+    border:none;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #60a5fa
+    );
+
+
+    color:white;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+
+    box-shadow:
+
+    0 15px 30px rgba(37,99,235,.35);
+
+
+    transition:.3s;
+
+}
+
+
+
+.auth-btn:hover{
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 25px 45px rgba(37,99,235,.45);
+
+}
+
+
+
+/* ==========================
+   LINKS
+========================== */
+
+
+.auth-links{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+
+
+.auth-links a{
+
+    color:#2563eb;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+
+
+.auth-links a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/* ==========================
+   MENSAJES
+========================== */
+
+
+.error{
+
+    color:#dc2626;
+
+    background:rgba(239,68,68,.12);
+
+    padding:12px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+
+
+.success{
+
+    color:#16a34a;
+
+    background:rgba(22,163,74,.12);
+
+    padding:12px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+.auth-page{
+
+    min-height:100vh;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+
+.auth-background{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+
+    background-image:
+    linear-gradient(
+        rgba(2,6,23,.45),
+        rgba(2,6,23,.55)
+    ),
+    url('/images/smart-home.jpg');
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    z-index:-1;
+
+}
+
+
+
+.auth-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.auth-page{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-start;
+
+padding:40px 15px;
+
+background:
+linear-gradient(
+135deg,
+#050505,
+#111827
+);
+
+overflow-y:auto;
+
+}
+.auth-logo{
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:0 auto 20px auto;
+
+}
+.auth-header{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+
+.auth-logo{
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:0 auto 10px auto;
+
+}
+
+
+.auth-header h1{
+
+    color:#DBB42C;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}

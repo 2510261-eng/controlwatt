@@ -1,0 +1,365 @@
+/* ==========================
+   SETTINGS CONTROLWATT
+========================== */
+
+
+.settings-shell{
+
+    max-width:780px;
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+
+
+.settings-header{
+
+    margin-bottom:6px;
+
+}
+
+
+
+.settings-header .dashboard-title{
+
+    margin-bottom:8px;
+
+}
+
+
+
+.settings-header .dashboard-description{
+
+    color:var(--text-secondary);
+
+    margin-bottom:0;
+
+}
+
+
+
+/* ==========================
+   TARJETAS GLASS
+========================== */
+
+
+.settings-card{
+
+    width:100%;
+
+    padding:24px 26px;
+
+    border-radius:20px;
+
+
+    background:
+
+    rgba(255,255,255,.10);
+
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.18);
+
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35),
+
+    inset 0 1px 0 rgba(255,255,255,.15);
+
+
+
+    transition:.35s ease;
+
+}
+
+
+
+.settings-card:hover{
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.45);
+
+}
+
+
+
+/* TITULOS */
+
+
+.settings-card h3{
+
+    color:#f8fafc;
+
+    font-size:1.05rem;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.settings-card p{
+
+    color:#cbd5e1;
+
+    margin-bottom:16px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* ==========================
+   BOTONES
+========================== */
+
+
+.settings-card .btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    width:100%;
+
+    max-width:220px;
+
+
+    padding:12px 16px;
+
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+    font-weight:600;
+
+
+    background:
+
+    rgba(34,197,94,.85);
+
+
+    color:white;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    transition:.3s;
+
+}
+
+
+
+.settings-card .btn:hover{
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+    0 12px 30px rgba(34,197,94,.35);
+
+}
+
+
+
+/* ==========================
+   BOTONES DE FUENTE
+========================== */
+
+
+.font-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.font-buttons .btn{
+
+    width:auto;
+
+    min-width:110px;
+
+
+    padding:10px 16px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    color:#f8fafc;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.18);
+
+}
+
+
+
+.font-buttons .btn.active{
+
+    background:
+
+    rgba(34,197,94,.25);
+
+
+    border-color:#34d399;
+
+
+    color:#ecfdf5;
+
+}
+
+
+
+/* ==========================
+   CERRAR SESIÓN
+========================== */
+
+
+.logout{
+
+    background:
+
+    rgba(239,68,68,.85) !important;
+
+}
+
+
+
+.logout:hover{
+
+    box-shadow:
+
+    0 12px 30px rgba(239,68,68,.35);
+
+}
+
+
+
+/* ==========================
+   MODO CLARO
+========================== */
+
+
+body.light .settings-card,
+body.light-mode .settings-card{
+
+
+    background:
+
+    rgba(255,255,255,.70);
+
+
+
+    border:
+
+    1px solid rgba(15,23,42,.12);
+
+
+
+    box-shadow:
+
+    0 20px 45px rgba(15,23,42,.18);
+
+}
+
+
+
+body.light .settings-card h3,
+body.light-mode .settings-card h3{
+
+    color:#0f172a;
+
+}
+
+
+
+body.light .settings-card p,
+body.light-mode .settings-card p{
+
+    color:#475569;
+
+}
+
+
+
+body.light .font-buttons .btn,
+body.light-mode .font-buttons .btn{
+
+
+    background:
+
+    rgba(255,255,255,.8);
+
+
+    color:#0f172a;
+
+
+    border-color:rgba(15,23,42,.15);
+
+}
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:768px){
+
+    .settings-card{
+
+        padding:20px;
+
+    }
+
+
+    .font-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .settings-card .btn{
+
+        max-width:100%;
+
+    }
+
+}
