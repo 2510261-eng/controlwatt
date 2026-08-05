@@ -1,0 +1,491 @@
+/* ==========================
+   IMPORTS
+========================== */
+
+
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/typography.css';
+@import './base/animations.css';
+
+/* @import './themes/dark.css'; */
+/* @import './themes/light.css'; */
+@import './themes/background.css';
+
+@import './layouts/layout.css';
+@import './layouts/navbar.css';
+@import './layouts/sidebar.css';
+
+
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+@import './components/modal.css';
+@import './components/tables.css';
+
+
+@import './pages/auth.css';
+@import './pages/dashboard.css';
+@import './pages/devices.css';
+@import './pages/homes.css';
+@import './pages/profile.css';
+@import './pages/reports.css';
+@import './pages/settings.css';
+
+
+@import './utilities/helpers.css';
+@import './utilities/spacing.css';
+
+
+
+
+/* ==========================
+   RESET GLOBAL
+========================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+/* ==========================
+   FONDO GLOBAL CONTROLWATT
+========================== */
+
+
+html,
+body{
+
+    min-height:100vh;
+
+    font-family:'Poppins',sans-serif;
+
+    color:#f8fafc;
+
+
+    background-image:
+
+    linear-gradient(
+        rgba(2,6,23,.25),
+        rgba(2,6,23,.35)
+    ),
+
+    url('/images/smart-home.jpg');
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+}
+
+
+
+/* ==========================
+   ESTRUCTURA
+========================== */
+
+
+.app{
+
+    min-height:100vh;
+
+    display:flex;
+
+    background:transparent;
+
+}
+
+
+
+.main{
+
+    flex:1;
+
+    margin-left:300px;
+
+    background:transparent;
+
+}
+
+
+
+main{
+
+    min-height:100vh;
+
+    background:transparent;
+
+}
+
+
+
+.content{
+
+    padding:30px;
+
+    background:transparent;
+
+}
+
+
+
+/* ==========================
+   SIDEBAR TRANSPARENTE
+========================== */
+
+
+.sidebar{
+
+    background:
+
+    rgba(15,23,42,.55);
+
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+
+    border-right:
+
+    1px solid rgba(255,255,255,.15);
+
+}
+
+
+
+/* ==========================
+   NAVBAR TRANSPARENTE
+========================== */
+
+
+.navbar{
+
+    background:
+
+    rgba(255,255,255,.10);
+
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,.15);
+
+}
+
+
+
+/* ==========================
+   TARJETAS GLASS 3D
+========================== */
+
+
+.card,
+.settings-card{
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.20);
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+
+    0 25px 60px rgba(0,0,0,.40),
+
+
+    inset 0 1px 0 rgba(255,255,255,.25);
+
+
+    transition:.35s ease;
+
+}
+
+
+
+.card:hover,
+.settings-card:hover{
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+    0 40px 90px rgba(0,0,0,.55);
+
+}
+
+
+
+/* ==========================
+   TEXTO GENERAL
+========================== */
+
+
+h1,h2,h3,h4,p,label{
+
+    color:white;
+
+}
+
+
+
+/* ==========================
+   INPUTS
+========================== */
+
+
+input,
+select,
+textarea{
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(10px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.25);
+
+
+    color:white;
+
+
+}
+
+
+
+input::placeholder,
+textarea::placeholder{
+
+    color:#cbd5e1;
+
+}
+
+
+
+
+/* ==========================
+   BOTONES
+========================== */
+
+
+button,
+.btn{
+
+
+    transition:.3s;
+
+}
+
+
+
+button:hover,
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ==========================
+   MODO CLARO
+========================== */
+
+
+body.light,
+body.light-mode{
+
+
+    color:#111827;
+
+
+    background-image:
+
+
+    linear-gradient(
+
+        rgba(255,255,255,.35),
+
+        rgba(255,255,255,.45)
+
+    ),
+
+
+    url('/images/smart-home.jpg');
+
+
+}
+
+
+
+body.light h1,
+body.light h2,
+body.light h3,
+body.light p,
+body.light label{
+
+
+    color:#111827;
+
+}
+
+
+
+body.light .card,
+body.light .settings-card{
+
+
+    background:
+
+    rgba(255,255,255,.70);
+
+
+}
+
+
+
+/* ==========================
+   TAMAÑO LETRA
+========================== */
+
+
+body.small-font{
+
+    font-size:14px;
+
+}
+
+
+
+body.large-font{
+
+    font-size:20px;
+
+}
+/* ==================================
+   FONDO GLOBAL CONTROLWATT
+================================== */
+
+
+html,
+body{
+
+    min-height:100%;
+
+}
+
+
+body{
+
+    min-height:100vh !important;
+
+    background-image:
+    linear-gradient(
+        rgba(2,6,23,.25),
+        rgba(2,6,23,.35)
+    ),
+    url('/images/smart-home.jpg') !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+    background-repeat:no-repeat !important;
+
+    background-attachment:fixed !important;
+
+}
+
+
+/* Evita que las páginas tapen el fondo */
+
+.app,
+.main,
+.content,
+main{
+
+    background:transparent !important;
+
+}
+/* FONDO CONTROLWATT DEFINITIVO */
+
+body.controlwatt-bg{
+
+
+    min-height:100vh;
+
+
+    background-image:
+
+
+    linear-gradient(
+
+        rgba(2,6,23,.30),
+
+        rgba(2,6,23,.40)
+
+    ),
+
+
+    url('/images/smart-home.jpg') !important;
+
+
+
+    background-size:cover !important;
+
+
+    background-position:center !important;
+
+
+    background-repeat:no-repeat !important;
+
+
+    background-attachment:fixed !important;
+
+
+
+}

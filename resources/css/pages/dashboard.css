@@ -1,0 +1,171 @@
+/* ==========================
+   DASHBOARD CONTROLWATT
+========================== */
+
+
+.dashboard{
+
+    padding:30px;
+
+}
+
+
+
+/* TITULO */
+
+.dashboard-title{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#ffffff;
+
+    margin-bottom:15px;
+
+    text-shadow:
+
+    0 4px 15px rgba(0,0,0,.8);
+
+}
+
+
+
+
+/* DESCRIPCION */
+
+.dashboard-description{
+
+    color:#e2e8f0;
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+    text-shadow:
+
+    0 3px 10px rgba(0,0,0,.8);
+
+}
+
+
+
+
+/* CONTENEDOR TARJETAS */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, minmax(220px,250px));
+
+    gap:25px;
+
+}
+
+
+
+
+/* TARJETAS GLASS */
+
+.card{
+
+    min-height:160px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.40),
+
+    inset 0 1px 0 rgba(255,255,255,.25);
+
+    transition:.35s;
+
+}
+
+
+
+/* EFECTO 3D */
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 40px 90px rgba(0,0,0,.55);
+
+}
+
+
+
+/* TITULO DE TARJETA */
+
+.card-title{
+
+    color:#111827;
+
+    font-family:"Poppins", sans-serif;
+
+    font-size:24px;
+
+    font-weight:800;
+
+    text-shadow:
+    0 4px 15px rgba(255,255,255,.2);
+
+}
+/* NUMERO DE TARJETA */
+
+.card-value{
+
+    margin-top:20px;
+
+    font-size:34px;
+
+    font-weight:900;
+
+    color:#0047ff;
+
+    text-shadow:
+
+        0 0 12px rgba(0,71,255,.9),
+
+        0 0 30px rgba(0,71,255,.7),
+
+        0 5px 20px rgba(0,0,0,.8);
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .dashboard-title{
+
+        font-size:32px;
+
+    }
+
+}
+

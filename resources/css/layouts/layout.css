@@ -1,0 +1,47 @@
+/* ==========================
+   ESTRUCTURA PRINCIPAL
+========================== */
+
+.app{
+
+    display:flex;
+
+    min-height:100vh;
+
+    background:transparent;
+
+}
+
+
+
+.main{
+
+    margin-left:300px;
+
+    flex:1;
+
+    min-height:100vh;
+
+    background:transparent;
+
+}
+
+
+
+.content{
+
+    padding:30px;
+
+    min-height:100vh;
+
+    background:transparent;
+
+}
+
+
+
+main{
+
+    background:transparent;
+
+}
