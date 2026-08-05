@@ -16,6 +16,8 @@ RUN curl -sS https://getcomposer.org/installer | php \
 
 RUN composer install --no-dev --optimize-autoloader
 
-EXPOSE 10000
+RUN chmod -R 775 storage bootstrap/cache
+
+EXPOSE 8080
 
 CMD sh -c "php artisan serve --host=0.0.0.0 --port=$PORT"
